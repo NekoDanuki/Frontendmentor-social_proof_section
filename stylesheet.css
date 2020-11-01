@@ -47,6 +47,12 @@ body {
     width: 350px;
     display: block;
 }
+.rating .rate.two {
+    margin-left: 40px;
+}
+.rating .rate.three {
+    margin-left: 80px;
+}
 .rating .rate p {
     padding: 15px;
     padding-right: 20px;
@@ -63,15 +69,15 @@ body {
 .bot {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     margin: 100px;
     margin-top: 50px;
 }
 .bot .testi {
     border-radius: 7px;
-    height: fit-content;
-    width: 350px;
     display: block;
+    height: fit-content;
+    width: 30%;
     background-color: hsl(300, 43%, 22%);
     color: hsl(0, 0%, 100%);
     font-size: 12px;
@@ -107,4 +113,33 @@ body {
 .bot .testi .testi-1 {
     padding: 30px;
     line-height: 20px;
+}
+
+@media only screen and (max-width: 500px) {
+    body {
+        margin: 20px;
+    }
+
+    .top {
+        margin: 0;
+        flex-direction: column;
+    }
+    .top .main .main-top {
+        text-align: center;
+    }
+    .top .main {
+        width: 100%;
+    }
+    .top .rating .rate {
+        margin: 0;
+        width: 100%;
+    }
+
+    .bot {
+        flex-direction: column;
+        margin: 20px 0;
+    }
+    .bot .testi {
+        width: 100%;
+    }
 }
